@@ -1,4 +1,4 @@
-package org.yk.cus.util;
+package com.vaicode.utils;
 
 public class CastUtil {
 

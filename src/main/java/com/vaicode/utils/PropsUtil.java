@@ -1,4 +1,4 @@
-package org.yk.cus.util;
+package com.vaicode.utils;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -42,7 +42,7 @@ public class PropsUtil {
     }
 
     public static Integer getInt(Properties props, String key) {
-        return getInt(props, key);
+        return getInt(props, key, null);
     }
 
     public static Integer getInt(Properties props, String key, Integer defaultValue) {
@@ -53,12 +53,12 @@ public class PropsUtil {
         return value;
     }
 
-    public static boolean getBoolean(Properties props, String key) {
-        return getBoolean(props, key);
+    public static Boolean getBoolean(Properties props, String key) {
+        return getBoolean(props, key, null);
     }
 
-    public static boolean getBoolean(Properties props, String key, boolean defaultValue) {
-        boolean value = defaultValue;
+    public static Boolean getBoolean(Properties props, String key, Boolean defaultValue) {
+        Boolean value = defaultValue;
         if (props.contains(key)) {
             value = CastUtil.castBoolean(props.getProperty(key));
         }

@@ -1,4 +1,4 @@
-package org.yk.cus.util;
+package com.vaicode.utils;
 
 import java.util.Collection;
 import java.util.Map;
