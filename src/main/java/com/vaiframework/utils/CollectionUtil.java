@@ -1,9 +1,9 @@
-package com.vaicode.utils;
+package com.vaiframework.utils;
 
 import java.util.Collection;
 import java.util.Map;
 
-public class CollectionUtils {
+public class CollectionUtil {
 
     public static boolean isNullOrEmpty(Collection<?> coll) {
         return coll == null || coll.isEmpty();

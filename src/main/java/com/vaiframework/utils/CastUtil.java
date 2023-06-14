@@ -1,4 +1,4 @@
-package com.vaicode.utils;
+package com.vaiframework.utils;
 
 public class CastUtil {
 
@@ -19,7 +19,7 @@ public class CastUtil {
 
         if (value != null) {
             String strValue = castString(value, "");
-            if (StringUtils.isNotNullOrBlank(strValue)) {
+            if (StringUtil.isNotNullOrBlank(strValue)) {
                 try {
                     doubleValue = Double.valueOf(strValue);
                 } catch (NumberFormatException ignored) {
@@ -38,7 +38,7 @@ public class CastUtil {
 
         if (value != null) {
             String strValue = castString(value, "");
-            if (StringUtils.isNotNullOrBlank(strValue)) {
+            if (StringUtil.isNotNullOrBlank(strValue)) {
                 try {
                     longValue = Long.valueOf(strValue);
                 } catch (NumberFormatException ignored) {
@@ -57,7 +57,7 @@ public class CastUtil {
 
         if (value != null) {
             String strValue = castString(value);
-            if (StringUtils.isNotNullOrBlank(strValue)) {
+            if (StringUtil.isNotNullOrBlank(strValue)) {
                 try {
                     intValue = Integer.valueOf(strValue);
                 } catch (NumberFormatException ignored) {
@@ -77,7 +77,7 @@ public class CastUtil {
 
         if (value != null) {
             String strValue = castString(value);
-            if (StringUtils.isNotNullOrBlank(strValue)) {
+            if (StringUtil.isNotNullOrBlank(strValue)) {
                 booleanValue = Boolean.parseBoolean(strValue);
             }
         }

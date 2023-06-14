@@ -1,4 +1,4 @@
-package com.vaicode.utils;
+package com.vaiframework.utils;
 
 /**
  * @author admin

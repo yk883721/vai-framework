@@ -1,10 +1,10 @@
-package com.vaicode.helper;
+package com.vaiframework.helper;
 
-import com.vaicode.annotaion.Action;
-import com.vaicode.bean.Handler;
-import com.vaicode.bean.Request;
-import com.vaicode.utils.ArrayUtil;
-import com.vaicode.utils.CollectionUtils;
+import com.vaiframework.annotaion.Action;
+import com.vaiframework.bean.Handler;
+import com.vaiframework.bean.Request;
+import com.vaiframework.utils.ArrayUtil;
+import com.vaiframework.utils.CollectionUtil;
 
 import java.lang.reflect.Method;
 import java.util.HashMap;
@@ -22,10 +22,9 @@ public class ControllerHelper {
     static {
 
         Set<Class<?>> controllerClassSet = ClassHelper.getControllerClassSet();
-        if (CollectionUtils.isNotNullOrEmpty(controllerClassSet)) {
+        if (CollectionUtil.isNotNullOrEmpty(controllerClassSet)) {
 
             for (Class<?> controllerClass : controllerClassSet) {
-
 
                 Method[] controllerMethods = controllerClass.getDeclaredMethods();
                 if (ArrayUtil.isNotNullOrBlank(controllerMethods)) {
@@ -37,7 +36,7 @@ public class ControllerHelper {
                             Action action = controllerMethod.getAnnotation(Action.class);
                             String mapping = action.value();
 
-                            if (mapping.matches("\\w+:\\w+")){
+                            if (mapping.matches("\\w+:(/\\w+)+")){
 
                                 String[] array = mapping.split(":");
                                 if (ArrayUtil.isNotNullOrBlank(array) && array.length == 2) {

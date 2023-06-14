@@ -1,4 +1,4 @@
-package com.vaicode.annotaion;
+package com.vaiframework.annotaion;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -8,10 +8,13 @@ import java.lang.annotation.Target;
 /**
  * @author admin
  */
-@Target(ElementType.FIELD)
+@Target(ElementType.METHOD)
 @Retention(RetentionPolicy.RUNTIME)
-public @interface Inject {
+public @interface Action {
 
-
+    /**
+     * 请求类型与路径
+     */
+    String value();
 
 }

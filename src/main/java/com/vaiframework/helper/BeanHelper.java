@@ -1,7 +1,6 @@
-package com.vaicode.helper;
+package com.vaiframework.helper;
 
-import com.vaicode.utils.ClassUtil;
-import com.vaicode.utils.ReflectionUtil;
+import com.vaiframework.utils.ReflectionUtil;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -1,11 +1,10 @@
-package com.vaicode;
+package com.vaiframework;
 
-import com.vaicode.annotaion.Controller;
-import com.vaicode.helper.BeanHelper;
-import com.vaicode.helper.ClassHelper;
-import com.vaicode.helper.ControllerHelper;
-import com.vaicode.helper.IocHelper;
-import com.vaicode.utils.ClassUtil;
+import com.vaiframework.helper.BeanHelper;
+import com.vaiframework.helper.ClassHelper;
+import com.vaiframework.helper.ControllerHelper;
+import com.vaiframework.helper.IocHelper;
+import com.vaiframework.utils.ClassUtil;
 
 /**
  * 加载相应的 helper 类

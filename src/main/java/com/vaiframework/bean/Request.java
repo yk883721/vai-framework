@@ -1,6 +1,4 @@
-package com.vaicode.bean;
-
-import org.apache.commons.lang3.builder.HashCodeBuilder;
+package com.vaiframework.bean;
 
 /**
  * @author admin

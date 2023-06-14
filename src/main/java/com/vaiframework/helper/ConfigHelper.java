@@ -1,7 +1,7 @@
-package com.vaicode.helper;
+package com.vaiframework.helper;
 
-import com.vaicode.constant.ConfigConstant;
-import com.vaicode.utils.PropsUtil;
+import com.vaiframework.constant.ConfigConstant;
+import com.vaiframework.utils.PropsUtil;
 
 import java.util.Properties;
 
@@ -50,7 +50,7 @@ public class ConfigHelper {
     }
 
     public static String getAppAssertPath() {
-        return PropsUtil.getString(CONFIG_PROPS, ConfigConstant.APP_ASSERT_PATH, "/assert/");
+        return PropsUtil.getString(CONFIG_PROPS, ConfigConstant.APP_ASSERT_PATH, "/asset/");
     }
 
 }

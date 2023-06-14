@@ -1,6 +1,6 @@
-package com.vaicode.utils;
+package com.vaiframework.utils;
 
-public class StringUtils {
+public class StringUtil {
 
     public static int length(CharSequence cs) {
         return cs == null ? 0 : cs.length();
@@ -23,6 +23,10 @@ public class StringUtils {
 
     public static boolean isNotNullOrBlank(CharSequence cs) {
         return !isNullOrBlank(cs);
+    }
+
+    public static String[] splitString(String str, String delimiter) {
+        return str.split(delimiter);
     }
 
 }

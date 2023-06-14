@@ -1,8 +1,10 @@
-package com.vaicode.helper;
+package com.vaiframework.helper;
 
-import com.vaicode.annotaion.Controller;
-import com.vaicode.annotaion.Service;
-import com.vaicode.utils.ClassUtil;
+import com.vaiframework.annotaion.Controller;
+import com.vaiframework.annotaion.Service;
+import com.vaiframework.utils.ClassUtil;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -14,11 +16,17 @@ import java.util.Set;
  */
 public class ClassHelper {
 
+    private static final Logger logger = LoggerFactory.getLogger(ClassHelper.class);
+
     private static final Set<Class<?>> CLASS_SET;
 
     static {
         String basePackage = ConfigHelper.getAppBasePackage();
-        CLASS_SET = ClassUtil.getClassSet(basePackage);
+        Set<Class<?>> classSet = ClassUtil.getClassSet(basePackage);
+
+        logger.info("{}", classSet);
+
+        CLASS_SET = classSet;
     }
 
     /**

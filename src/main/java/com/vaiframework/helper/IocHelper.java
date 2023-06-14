@@ -1,8 +1,8 @@
-package com.vaicode.helper;
+package com.vaiframework.helper;
 
-import com.vaicode.annotaion.Inject;
-import com.vaicode.utils.ArrayUtil;
-import com.vaicode.utils.ReflectionUtil;
+import com.vaiframework.annotaion.Inject;
+import com.vaiframework.utils.ArrayUtil;
+import com.vaiframework.utils.ReflectionUtil;
 
 import java.lang.reflect.Field;
 import java.util.Map;

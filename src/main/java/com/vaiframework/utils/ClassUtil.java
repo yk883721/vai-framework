@@ -1,4 +1,4 @@
-package com.vaicode.utils;
+package com.vaiframework.utils;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -87,18 +87,18 @@ public class ClassUtil {
             String fileName = file.getName();
             if (file.isFile()) {
                 String className = fileName.substring(0, fileName.lastIndexOf("."));
-                if (StringUtils.isNotNullOrBlank(className)) {
+                if (StringUtil.isNotNullOrBlank(className)) {
                     className = packageName + "." + className;
                 }
                 doAddClass(classSet, className);
             }else {
                 String subPackagePath = fileName;
-                if (StringUtils.isNotNullOrBlank(packagePath)) {
+                if (StringUtil.isNotNullOrBlank(packagePath)) {
                     subPackagePath = packagePath + "/" + subPackagePath;
                 }
 
                 String subPackageName = fileName;
-                if (StringUtils.isNotNullOrBlank(packageName)) {
+                if (StringUtil.isNotNullOrBlank(packageName)) {
                     subPackageName = packageName + "." + subPackageName;
                 }
 

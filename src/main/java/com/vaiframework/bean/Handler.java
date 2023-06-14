@@ -1,4 +1,4 @@
-package com.vaicode.bean;
+package com.vaiframework.bean;
 
 import java.lang.reflect.Method;
 
@@ -11,12 +11,12 @@ public class Handler {
     /**
      * Controller 类
      */
-    private Class<?> controllerClass;
+    private final Class<?> controllerClass;
 
     /**
      * Action 方法
      */
-    private Method actionMethod;
+    private final Method actionMethod;
 
     public Handler(Class<?> controllerClass, Method actionMethod) {
         this.controllerClass = controllerClass;
